@@ -1,1 +1,11 @@
+.sec1{
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+}
 
+.sec2{
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
