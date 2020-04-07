@@ -173,6 +173,10 @@ article{
 
 }
 
+.produkttekst{
+  margin:auto; 
+}
+
 .half{
   width: 45%;
   background-color: #fff;
@@ -197,4 +201,7 @@ article{
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+}
+.produktbutton{
+text-align: center;
 }
