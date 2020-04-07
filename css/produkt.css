@@ -33,6 +33,8 @@ header{
 }
 
 
+
+
 /*menu */
 
 
@@ -164,7 +166,7 @@ article{
   padding: 20px;
   text-align: center;
 }
-.full h1, .full img {
+.full h1, .full img, .full h3 {
   margin: auto;
   width: 100%;
   padding-bottom: 10px;
@@ -182,4 +184,17 @@ article{
 .half h1, .half img {
   margin: auto;
   padding: 20px 0px 10px 0px;
+}
+
+/* Button til produkt side */
+.button {
+  background-color: #fff;
+  border-radius: 15px;
+  color: #012945;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
 }
