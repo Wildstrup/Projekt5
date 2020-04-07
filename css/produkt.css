@@ -165,6 +165,7 @@ article{
   border-radius: 15px;
   padding: 20px;
   text-align: center;
+  
 }
 .full h1, .full img, .full h3 {
   margin: auto;
@@ -174,7 +175,7 @@ article{
 }
 
 .produkttekst{
-  margin:auto; 
+  margin:auto;
 }
 
 .half{
