@@ -162,24 +162,34 @@ article .game-name{
   height: 50px;
   background-color: #fafafa;
   border-radius: 15px;
+}
 
+article .game-name h2{
+  text-align: center;
+  margin: 10px;
 }
 
 article .game-box{
+  width: 400px;
   height: 500px;
-  width: 500px;
-  background-color: #fafafa;
-  margin-bottom: 10px;
+  background: #fafafa;
   border-radius: 15px;
-display: grid;
-grid-row:3;
 }
 
 article .game-box img{
-margin: 2px;
-border-radius: 15px;
-display: grid;
+border-radius: 20px;
+margin-top: 30px;
 
-
+}
+section .button-area{
+  background: #002643;
+}
+section .button{
+  width: 90px;
+  height: 50px;
+  background:#fafafa;
+  border-radius: 15px;
+  margin-left: 145px;
+  background-color: red;
 
 }
