@@ -165,9 +165,9 @@ article{
   border-radius: 15px;
   padding: 20px;
   text-align: center;
-  
+
 }
-.full h1, .full img, .full h3 {
+.full h1, .full img, .full h2, .full h3 {
   margin: auto;
   width: 100%;
   padding-bottom: 10px;
