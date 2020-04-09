@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+ display: flex;
+ align-items: center;
+ margin: auto;
+ margin-top: 5vh;
+}
+
+.wrapper-c{
+	width: 100%;
+	max-width: 600px;
+	padding: 100px;
+	box-sizing: border-box;
+}
+
+.content-c{
+	text-align: center;
+}
+
+.form{
+	width: 100%;
+	margin: 25px 0;
+}
+
+.tlf-login,
+.login-kode {
+	width: 100%;
+	margin: 10px 0;
+	overflow: hidden;
+}
+
+.form input[type="text"],
+.form textarea{
+	padding: 15px 5px;
+	box-sizing: border-box;
+	width: 100%;
+	border: 2px solid #ddd;
+	border-radius: 2px;
+	outline: none;
+	transition: all .4s ease;
+}
+
+.form input:focus,
+.form textarea:focus{
+	border-color: #012945;
+	box-shadow: inset 1px 1px 1px rgba(12, 12, 12, 0.2),
+							0 0 8px rgba(12, 12, 12, 0.4);
+}
+
+.form .label{
+	margin-bottom: 5px;
+}
+
+.form .loginbtn{
+  display: flex;
+  background-color:#012945;
+  border-radius:10px;
+  cursor:pointer;
+  color:#fafafa;
+  font-size:0.9em;
+  padding: 1em 0em;
+  margin-top: 2em;
+  width: 25%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form .loginbtn:hover{
+  background-color: ##012945;
+  border: 1px solid;
+  border-color: #012945;
+}
+
+.h2 {
+  display: flex;
+
+}
