@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Club Matas</title>
+    <style media="screen">
+
+    .button-link {
+    background: red;
+    width: 150px;
+    margin: auto;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    }
+    .button-pas {
+    background: #fff;
+    width: 150px;
+    margin: auto;
+    color: #000;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+    </style>
+  </head>
+  <body>
+  <header>
+    <div class="toggle-holder">
+        <div onclick="myFunction()"  id="toggle"  class="menu-line">
+          <div class="menu-line"></div>
+        </div>
+</div>
+
+  <nav  id="myDropdown" class="menu-left-part">
+
+      <ul class="menu">
+
+          <li class="menu-item active-menu"><img src="image/home-icon.png" alt=""> <a href="index.html" >Forside</a></li>
+          <li class="menu-item"><img src="image/live-icon.png" alt=""><a href="live.html">Matas live</a></li>
+          <li class="menu-item"><img src="image/spil-icon.png" alt=""><a href="spil.html">Dagens spil</a></li>
+          <li class="menu-item"><img src="image/produkt-icon.png" alt=""><a href="produker.html">Find produker</a></li>
+          <li class="menu-item"><img src="image/kupon-icon.png" alt=""><a href="kuponer.html">Kuponer</a></li>
+          <li class="menu-item"><img src="image/kurv-icon.png" alt=""><a href="kurv.html">Kurv</a></li>
+          <li class="menu-item"><img src="image/butik-icon.png" alt=""><a href="butikker.html">Butikker</a></li>
+          <li class="menu-item"><img src="image/profil-icon.png" alt=""><a href="profil.html">Min profil</a></li>
+          <li class="menu-item"><img src="image/kontakt-icon.png" alt=""><a href="kontakt.html">Kontakt</a></li>
+
+      </ul>
+
+  </nav>
+      <section id="logo">
+        <img src="image/logo.png" alt="club matas" hei>
+      </section>
+      <section id="search">
+        <img src="image/search.png" alt="search icon">
+      </section>
+  </header>
+
+  <main>
+
+      <article>
+    <section class="full">
+      <h1>Kurv</h1>
+
+    </section>
+
+      </article>
+      <article>
+        <section class="full">
+        <table>
+          <tbody>
+            <tr>
+              <td>Produkter</td>
+              <td></td>
+              <td>Antal</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><img src="image/pacorabanne.png" alt="Produkt"></td>
+              <td>PACO RABANNE</td>
+              <td>1</td>
+              <td>DKK 6.799,50</td>
+            </tr>
+            <tr>
+              <td><img src="image/kvindegave.png" alt="Produkt"></td>
+              <td>ELIZABETH ARDEN</td>
+              <td>1</td>
+              <td>DKK 299,95</td>
+            </tr>
+            <tr>
+              <td><img src="image/armani.png" alt="Produkt"></td>
+              <td>GIORGIO ARMANI</td>
+              <td>1</td>
+              <td>DKK 249,95</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>i alt:</td>
+              <td>DKK 7.349,4‬0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button type="button" name="button" class="button-link">Kasse</button>
+        <button type="button" name="button" class="button-pas">Shop videre</button>
+        </section>
+
+      </article>
+
+    </main>
+
+
+
+
+        <script>
+
+              /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+        // Close the dropdown if the user clicks outside of it
+
+            window.onclick = function(event) {
+              if (!event.target.matches('.menu-line')) {
+                var dropdowns = document.getElementsByClassName("menu-left-part");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+              }
+            }
+
+        </script>
+
+
+  </body>
+</html>
