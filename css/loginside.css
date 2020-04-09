@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .logo {
@@ -23,7 +24,6 @@
 
 .form{
 	width: 100%;
-	margin: 25px 0;
 }
 
 .tlf-login,
@@ -46,24 +46,20 @@
 
 .form input:focus,
 .form textarea:focus{
+  border-radius:10pt;
 	border-color: #012945;
 	box-shadow: inset 1px 1px 1px rgba(12, 12, 12, 0.2),
 							0 0 8px rgba(12, 12, 12, 0.4);
 }
 
-.form .label{
-	margin-bottom: 5px;
-}
-
 .form .loginbtn{
-  display: flex;
+  display: block;
   background-color:#012945;
-  border-radius:10px;
+  border-radius:10pt;
   cursor:pointer;
   color:#fafafa;
   font-size:0.9em;
   padding: 1em 0em;
-  margin-top: 2em;
   width: 25%;
   text-align: center;
   margin-left: auto;
@@ -78,5 +74,6 @@
 
 .h2 {
   display: flex;
-
+  margin-left;
+  margin-right;
 }
