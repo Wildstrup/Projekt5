@@ -3,7 +3,6 @@ body {
 
   max-width: 320px;
   margin: auto;
-
 }
 
 /*header area*/
@@ -153,7 +152,7 @@ article{
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: #012945;
+  background-color: #002346;
   padding: 10px 30px 10px 30px;
 }
 
@@ -191,5 +190,4 @@ section .button{
   border-radius: 15px;
   margin-left: 145px;
   background-color: red;
-
 }
