@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Club Matas</title>
+  </head>
+  <body>
+  <header>
+    <div class="toggle-holder">
+        <div onclick="myFunction()"  id="toggle"  class="menu-line">
+          <div class="menu-line"></div>
+        </div>
+</div>
+
+  <nav  id="myDropdown" class="menu-left-part">
+
+      <ul class="menu">
+
+          <li class="menu-item active-menu"><img src="image/home-icon.png" alt=""> <a href="index.html" >Forside</a></li>
+          <li class="menu-item"><img src="image/live-icon.png" alt=""><a href="live.html">Matas live</a></li>
+          <li class="menu-item"><img src="image/spil-icon.png" alt=""><a href="spil.html">Dagens spil</a></li>
+          <li class="menu-item"><img src="image/produkt-icon.png" alt=""><a href="findprodukter.html">Find produker</a></li>
+          <li class="menu-item"><img src="image/kupon-icon.png" alt=""><a href="kuponer.html">Kuponer</a></li>
+          <li class="menu-item"><img src="image/kurv-icon.png" alt=""><a href="kurv.html">Kurv</a></li>
+          <li class="menu-item"><img src="image/butik-icon.png" alt=""><a href="butikker.html">Butikker</a></li>
+          <li class="menu-item"><img src="image/profil-icon.png" alt=""><a href="profil.html">Min profil</a></li>
+          <li class="menu-item"><img src="image/kontakt-icon.png" alt=""><a href="kontakt.html">Kontakt</a></li>
+
+
+
+      </ul>
+
+  </nav>
+
+      <section id="logo">
+        <img src="image/logo.png" alt="club matas" hei>
+      </section>
+      <section id="search">
+        <img src="image/search.png" alt="search icon">
+      </section>
+  </header>
+
+  <main>
+
+    <article>
+      <section class="full">
+        <h1>Matas Live</h1>
+        <h2>Livestream starter imorgen <br><b>15:00</b></h2>
+        <img src="image/mataslive.jpg" alt="spil image">
+        <h3>Anbefalinger fra live video</h3>
+        <h4>Rødme og hudirritation</h4>
+        <p>Hvis man oplever at have rød og irriteret hud, er det her man skal
+          sætte ind først: hvis der er inflammationstilstand i huden, har den
+          nemlig sværere ved at løse andre udfordringer såsom at fugte sig selv
+          optimalt og holde sig bumse-fri.
+        <br>Vi anbefaler derfor, at du sætter ind over for hudirritation som
+        det første.
+        <br>Det er dog vigtigt at bemærke, at der er forskel på følsom og
+        irriteret hud:
+        <br>Følsom hud er en hudtype vi er født med
+        <br>Irriteret hud er en midlertidig tilstand og som derfor kan behandles.
+        <br>Oplever du hudirritation, bør du bruge simple og milde produkter.
+        Less is more, når det kommer til at behandle irritation i huden.</p>
+
+          <!-- Produkter  -->
+          <section class="half">
+            <h3>Creme</h3>
+            <img src="image/forside-1.png" alt="forside image">
+            <h4>89,-</h4>
+          </section>
+          <section class="half">
+            <h3>Benzin</h3>
+            <img src="image/forside-1.png" alt="forside image">
+            <h4>119,-</h4>
+          </section>
+
+      <section class="full">
+        <h4>Bumser</h4>
+        <p>Bumser er en hududfordring langt de fleste kommer til at opleve i
+          løbet af deres liv – men det gør den jo ikke mindre frustrerende.
+          Især rammes vi i teenageårene, men rigtig mange oplever, at bumserne
+          bliver ved med at være der langt ind i voksenlivet.</p>
+
+          <!-- Produkter  -->
+          <section class="half">
+            <h3>Olie</h3>
+            <img src="image/forside-1.png" alt="forside image">
+            <h4>89,-</h4>
+          </section>
+          <section class="half">
+            <h3>Æbler</h3>
+            <img src="image/forside-1.png" alt="forside image">
+            <h4>119,-</h4>
+          </section>
+      </section>
+
+      <section class="full">
+        <h4>Rynker og fine linjer</h4>
+        <p>Vi får alle rynker før eller siden, og det er selvfølgelig helt
+          okay. Alligevel drømmer mange om en mere ungdommelig, glat og fast
+          hud – især hvis man oplever, at rynkerne kommer snigende lidt
+          tidligt.</p>
+
+          <!-- Produkter  -->
+          <section class="half">
+            <h3>Madpakke</h3>
+            <img src="image/forside-1.png" alt="forside image">
+            <h4>89,-</h4>
+          </section>
+          <section class="half">
+            <h3>Star Wars</h3>
+            <img src="image/forside-1.png" alt="forside image">
+            <h4>119,-</h4>
+          </section>
+      </section>
+
+      <section class="full">
+        <h5>Læs mere på</h5>
+        <p>https://www.matas.dk/stories-live-shopping-kemiingenioeren-guider-til-hudpleje</p>
+
+      </section>
+    </article>
+  </main>
+
+
+
+
+        <script>
+
+              /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+        // Close the dropdown if the user clicks outside of it
+
+            window.onclick = function(event) {
+              if (!event.target.matches('.menu-line')) {
+                var dropdowns = document.getElementsByClassName("menu-left-part");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+              }
+            }
+
+        </script>
+
+
+  </body>
+</html>

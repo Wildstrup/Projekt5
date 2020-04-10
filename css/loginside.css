@@ -12,9 +12,12 @@
 }
 
 .wrapper-c{
+  display: flex;
+  align-items: center;
+  margin: auto;
 	width: 100%;
 	max-width: 600px;
-	padding: 100px;
+	padding: 3vh 5vh;
 	box-sizing: border-box;
 }
 
@@ -67,13 +70,15 @@
 }
 
 .form .loginbtn:hover{
-  background-color: ##012945;
-  border: 1px solid;
-  border-color: #012945;
+  background-color: #456d89;
 }
 
-.h2 {
-  display: flex;
-  margin-left;
-  margin-right;
+h2 {
+  display: block;
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-align: center;
 }

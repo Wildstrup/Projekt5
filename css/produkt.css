@@ -189,13 +189,14 @@ article{
 .half h1, .half img {
   margin: auto;
   padding: 20px 0px 10px 0px;
+  max-width: 50%;
 }
 
 /* Button til produkt side */
 .button {
-  background-color: #fff;
+  background-color: #000;
   border-radius: 15px;
-  color: #012945;
+  color: #fff;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -205,4 +206,9 @@ article{
 }
 .produktbutton{
 text-align: center;
+}
+
+
+.overskrifter {
+  font-size: 34px;
 }
