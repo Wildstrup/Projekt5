@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Club Matas</title>
+  </head>
+  <body>
+  <header>
+    <div class="toggle-holder">
+        <div onclick="myFunction()"  id="toggle"  class="menu-line">
+          <div class="menu-line"></div>
+        </div>
+</div>
+
+  <nav  id="myDropdown" class="menu-left-part">
+
+      <ul class="menu">
+
+          <li class="menu-item active-menu"><img src="image/home-icon.png" alt=""> <a href="../index.html" >Forside</a></li>
+          <li class="menu-item"><img src="image/live-icon.png" alt=""><a href="../live.html">Matas live</a></li>
+          <li class="menu-item"><img src="image/spil-icon.png" alt=""><a href="../spil.html">Dagens spil</a></li>
+          <li class="menu-item"><img src="image/produkt-icon.png" alt=""><a href="../findprodukter.html">Find produker</a></li>
+          <li class="menu-item"><img src="image/kupon-icon.png" alt=""><a href="../kuponer.html">Kuponer</a></li>
+          <li class="menu-item"><img src="image/kurv-icon.png" alt=""><a href="../kurv.html">Kurv</a></li>
+          <li class="menu-item"><img src="image/butik-icon.png" alt=""><a href="../butikker.html">Butikker</a></li>
+          <li class="menu-item"><img src="image/profil-icon.png" alt=""><a href="../profil.html">Min profil</a></li>
+          <li class="menu-item"><img src="image/kontakt-icon.png" alt=""><a href="../kontakt.html">Kontakt</a></li>
+
+
+
+      </ul>
+
+  </nav>
+
+      <section id="logo">
+        <img src="../image/logo.png" alt="club matas" hei>
+      </section>
+      <section id="search">
+        <img src="../image/search.png" alt="search icon">
+      </section>
+  </header>
+
+  <main>
+      <article>
+        <section class="full">
+          <h1>Dagens Spil</h1>
+          <img src="../image/spil.png" alt="spil image">
+          <h3>3 på stribe, spil med og vind fede premier!</h3>
+          <p>kupon002</p>
+        </section>
+      </article>
+  </main>
+
+
+
+
+        <script>
+
+              /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+        // Close the dropdown if the user clicks outside of it
+
+            window.onclick = function(event) {
+              if (!event.target.matches('.menu-line')) {
+                var dropdowns = document.getElementsByClassName("menu-left-part");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+              }
+            }
+
+        </script>
+
+
+  </body>
+</html>
