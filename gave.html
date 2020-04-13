@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/produkt.css">
+    <script src="js/burgermenu.js" defer></script>
     <title>Club Matas</title>
   </head>
   <body>
@@ -11,26 +12,19 @@
         <div onclick="myFunction()"  id="toggle"  class="menu-line">
           <div class="menu-line"></div>
         </div>
-</div>
-
+    </div>
   <nav  id="myDropdown" class="menu-left-part">
-
-      <ul class="menu">
-
-          <li class="menu-item active-menu"><img src="image/home-icon.png" alt=""> <a href="index.html" >Forside</a></li>
-          <li class="menu-item"><img src="image/live-icon.png" alt=""><a href="live.html">Matas live</a></li>
-          <li class="menu-item"><img src="image/spil-icon.png" alt=""><a href="spil.html">Dagens spil</a></li>
-          <li class="menu-item"><img src="image/produkt-icon.png" alt=""><a href="findprodukter.html">Find produker</a></li>
-          <li class="menu-item"><img src="image/kupon-icon.png" alt=""><a href="kuponer.html">Kuponer</a></li>
-          <li class="menu-item"><img src="image/kurv-icon.png" alt=""><a href="kurv.html">Kurv</a></li>
-          <li class="menu-item"><img src="image/butik-icon.png" alt=""><a href="butikker.html">Butikker</a></li>
-          <li class="menu-item"><img src="image/profil-icon.png" alt=""><a href="profil.html">Min profil</a></li>
-          <li class="menu-item"><img src="image/kontakt-icon.png" alt=""><a href="kontakt.html">Kontakt</a></li>
-
-
-
+    <ul class="menu">
+        <li class="menu-item active-menu"><img src="image/home-icon.png" alt=""> <a href="index.html" >Forside</a></li>
+        <li class="menu-item"><img src="image/live-icon.png" alt=""><a href="live.html">Matas live</a></li>
+        <li class="menu-item"><img src="image/spil-icon.png" alt=""><a href="spil.html">Dagens spil</a></li>
+        <li class="menu-item"><img src="image/produkt-icon.png" alt=""><a href="findprodukter.html">Find produkter</a></li>
+        <li class="menu-item"><img src="image/kupon-icon.png" alt=""><a href="kuponer.html">Kuponer</a></li>
+        <li class="menu-item"><img src="image/kurv-icon.png" alt=""><a href="kurv.html">Kurv</a></li>
+        <li class="menu-item"><img src="image/butik-icon.png" alt=""><a href="butikker.html">Butikker</a></li>
+        <li class="menu-item"><img src="image/profil-icon.png" alt=""><a href="profil.html">Min profil</a></li>
+        <li class="menu-item"><img src="image/kontakt-icon.png" alt=""><a href="kontakt.html">Kontakt</a></li>
       </ul>
-
   </nav>
 
       <section id="logo">
@@ -55,7 +49,7 @@
           <img class="halfimage" src="image/gave/gave4.png" alt="Matas ELIZABETH ARDEN">
           <p>709,95 kr.</p>
           <div class="produktbutton">
-            <a href="produkt4.html" class="button">Se mere</a>
+            <a href="gave3.html" class="button">Se mere</a>
           </div>
         </section>
         <section class="half">
@@ -64,7 +58,7 @@
           <img class="halfimage" src="image/gave/kvindegave.png" alt="Matas ELIZABETH ARDEN">
           <p>299,95 kr.</p>
           <div class="produktbutton">
-            <a href="#" class="button">Se mere</a>
+            <a href="gave2.html" class="button">Se mere</a>
           </div>
         </section>
       </article>
@@ -76,7 +70,7 @@
           <img class="halfimage" src="image/gave/gave2.png" alt="MATAS STRIBER">
           <p>99,95 kr.</p>
           <div class="produktbutton">
-            <a href="#" class="button">Se mere</a>
+            <a href="gave1.html" class="button">Se mere</a>
           </div>
         </section>
         <section class="half">
@@ -85,38 +79,10 @@
           <img class="halfimage" src="image/gave/gave3.png" alt="Matas CLINIQUE">
           <p>599,95 kr.</p>
           <div class="produktbutton">
-            <a href="#" class="button">Se mere</a>
+            <a href="gave4.html" class="button">Se mere</a>
           </div>
         </section>
       </article>
-
-
-
-        <script>
-
-              /* When the user clicks on the button,
-            toggle between hiding and showing the dropdown content */
-
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-        // Close the dropdown if the user clicks outside of it
-
-            window.onclick = function(event) {
-              if (!event.target.matches('.menu-line')) {
-                var dropdowns = document.getElementsByClassName("menu-left-part");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-                }
-              }
-            }
-
-        </script>
 
 
   </body>

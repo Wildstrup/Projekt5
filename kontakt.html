@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Club Matas</title>
+    <style media="screen">
+  .col2{
+    width:40%;
+    margin:auto;
+  }
+
+  .col1{
+    width:100%;
+    margin:auto;
+    text-align:center;
+  }
+    input, textarea {
+    border: 1px solid #000;
+    width:100%;
+    border-radius:5px;
+    }
+
+    </style>
+  </head>
+  <body>
+  <header>
+    <div class="toggle-holder">
+        <div onclick="myFunction()"  id="toggle"  class="menu-line">
+          <div class="menu-line"></div>
+        </div>
+</div>
+
+  <nav  id="myDropdown" class="menu-left-part">
+
+      <ul class="menu">
+
+          <li class="menu-item active-menu"><img src="image/home-icon.png" alt=""> <a href="index.html" >Forside</a></li>
+          <li class="menu-item"><img src="image/live-icon.png" alt=""><a href="live.html">Matas live</a></li>
+          <li class="menu-item"><img src="image/spil-icon.png" alt=""><a href="spil.html">Dagens spil</a></li>
+          <li class="menu-item"><img src="image/produkt-icon.png" alt=""><a href="findprodukter.html">Find produker</a></li>
+          <li class="menu-item"><img src="image/kupon-icon.png" alt=""><a href="kuponer.html">Kuponer</a></li>
+          <li class="menu-item"><img src="image/kurv-icon.png" alt=""><a href="kurv.html">Kurv</a></li>
+          <li class="menu-item"><img src="image/butik-icon.png" alt=""><a href="butikker.html">Butikker</a></li>
+          <li class="menu-item"><img src="image/profil-icon.png" alt=""><a href="profil.html">Min profil</a></li>
+          <li class="menu-item"><img src="image/kontakt-icon.png" alt=""><a href="kontakt.html">Kontakt</a></li>
+
+      </ul>
+
+  </nav>
+      <section id="logo">
+        <img src="image/logo.png" alt="club matas" hei>
+      </section>
+      <section id="search">
+        <img src="image/search.png" alt="search icon">
+      </section>
+  </header>
+
+  <main>
+<article>
+  <section class="half">
+  <img src="image/faq.png" alt="spørgsmål">
+  </section>
+  <section class="half">
+  <img src="image/kunder.png" alt="kunderservice">
+  </section>
+</article>
+      <article>
+    <section class="full">
+      <h1>Kontakt</h1>
+
+    </section>
+
+      </article>
+      <article>
+        <section class="full">
+          <p>
+            Har du spørgsmål vedrørende en online ordre eller til et produkt du har købt i Matas,
+            kan du henvende dig her gennem nedenstående formular. <br> Eller kontakte kundeservice på tlf. 4816 5544.
+            <br>
+            Åbningstid på telefon:
+            <br>Mandag - Torsdag fra kl. 8.00 - 18.00
+            <br>Fredag fra kl. 9.00 - 18.00
+            <br>Skærtorsdag, Langfredag og 2. påskedag holder vi lukket.
+            <br><br>
+            BEMÆRK:
+            <br>Du kan finde svar på mange af dine spørgsmål på matas.dk/kundeservice.
+
+            <br><br>Har du oplevet en bivirkning eller henvender du dig om en tilbagetrækning:
+
+            <br>Hvis du har oplevet bivirkninger efter brug af et lægemiddel, medicinsk udstyr, fødevarer, kosttilskud eller kosmetik bør du kontakte din egen læge, som kan indberette din sag til myndighederne. For lægemidler til både mennesker og dyr kan du også selv indberetter en bivirkning via af Lægemiddelstyrelsens hjemmeside.
+            <br>Du kan også vælge at kontakte producenten af produktet direkte eller Matas kundeservice på tlf. 48165544.
+
+            <br><br>Er du leverandør til Matas eller fra en myndighed og har brug for en tilbagetrækning af et lægemiddel, medicinsk udstyr, en fødevare, kosttilskud eller fødevarekontaktmaterialer udenfor vores åbningstid, så kan du som finde kontakt oplysning på vores beredskab under: Spørgsmål til tilbagetrækninger uden for Matas åbningstid.</p>
+        </section>
+
+      </article>
+      <article>
+    <section class="full">
+      <h1>Sende os en email</h1>
+
+    </section>
+
+      </article>
+      <article>
+        <section class="full">
+        <div class="col2">
+          <p>Navn</p>
+        </div>
+        <div class="col2">
+              <p>Telefon</p>
+        </div>
+
+            <div class="col2">
+              <input type="text" name="navn" value="">
+            </div>
+                <div class="col2">
+                  <input type="text" name="telefon" value="">
+                </div>
+            <div class="col2">
+                  <p>email</p>
+            </div>
+            <div class="col2">
+                  <p>emne</p>
+            </div>
+            <div class="col2">
+               <input type="text" name="email" value="">
+            </div>
+            <div class="col2">
+              <input type="text" name="emne" value="">
+            </div>
+            <div class="col1">
+                  <p>Besked</p>
+            </div>
+            <div class="col1">
+              <textarea name="name" rows="8" cols="12"></textarea>
+            </div>
+            <div class="col1">
+                <input type="submit" name="send" value="Sende">
+            </div>
+
+
+          </section>
+
+      </article>
+
+
+    </main>
+
+
+
+
+        <script>
+
+              /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+        // Close the dropdown if the user clicks outside of it
+
+            window.onclick = function(event) {
+              if (!event.target.matches('.menu-line')) {
+                var dropdowns = document.getElementsByClassName("menu-left-part");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+              }
+            }
+
+        </script>
+
+
+  </body>
+</html>
