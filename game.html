@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/game.css">
-    <link rel="stylesheet" href="game.js">
+    <script src="js/burgermenu.js">
+
+    </script>
     <title>Club Matas</title>
   </head>
   <body>
@@ -43,64 +45,44 @@
   </header>
 
   <main>
-    <article>
-      <section class="game-name">
-        <h2>Dagens spil</h2>
+    <section>
+      <h1 class="page-title">Matas huskespil</h1>
+      <div class="game-container">
+        <div class="game-info-container">
+          <div class="game-info">
+            Time <span id="time-remaning"> 100 </span>
+            Flips <span id="flips"> 0 </span>
 
-      </section>
-    </article>
+          </div>
 
-    <article>
-      <section class="game-box">
-        <img src="image/forside-1.png" alt="billede">
-        <img src="image/forside-1.png" alt="billede">
-        <img src="image/forside-1.png" alt="billede">
-        <img src="image/forside-1.png" alt="billede">
-          <img src="image/forside-1.png" alt="billede">
-            <img src="image/forside-1.png" alt="billede">
-              <img src="image/forside-1.png" alt="billede">
-                <img src="image/forside-1.png" alt="billede">
-                  <img src="image/forside-1.png" alt="billede">
+        </div>
+
+        <div class="card visible">
+
+<div class="card-back card-face">
+  <img class="striber"src="image/striber.png" alt="Matas striber">
+</div>
+<div class="card-front card-face">
+<img src="image/forside-1.png" alt="tester">
+</div>
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
 
 
-      </section>
-
-    </article>
-
-    <section class="button-area">
-      <div class="button">
-
-      </div>
     </section>
+  </main>
 
 
-    </main>
 
-        <script>
 
-              /* When the user clicks on the button,
-            toggle between hiding and showing the dropdown content */
 
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-        // Close the dropdown if the user clicks outside of it
-
-            window.onclick = function(event) {
-              if (!event.target.matches('.menu-line')) {
-                var dropdowns = document.getElementsByClassName("menu-left-part");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-                }
-              }
-            }
-
-        </script>
 
 
   </body>
