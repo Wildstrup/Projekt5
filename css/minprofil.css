@@ -13,7 +13,11 @@ main {
   padding: 30px;
 }
 
-article{
+.oplysninger {
+    padding: 15px 0 0 0;
+}
+
+.historik {
     padding: 15px 0 0 0;
 }
 
@@ -35,10 +39,8 @@ h1 {
   text-align: center;
 }
 
-.profile {
-  display: block;
-  margin: auto;
-  border-radius: 15px;
+.full .profile {
+  width: 80%;
 }
 
 .form,
