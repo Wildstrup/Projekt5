@@ -43,18 +43,23 @@ function getRelevancy(value, seachTerm){
       return 2;
     } else if (value.startWith(term)) {
       return 1;
-
+    } else if (value.includes(seachTerm)) {
+      return 0;
+    } else {
+      return -1;
     }
 }
 
 const searchInput = document.getElementById('search');
 
 searchInput.addEventListener('input', () => {
-  const value = event.target.value;
+  let value = event.target.value;
   if (value && value.trim().length > 0) {
       value = value.trim().toLowerCase();
       setList(Butikker.filter(butik => {
         return butik.name.includes(value);
+      }).sort((butikA, butikB) => {
+        return getRelevancy(butikB.name, value) - getRelevancy(butikA.name, value);
       }));
   } else {
     clearlist();
