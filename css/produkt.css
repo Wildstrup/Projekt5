@@ -174,9 +174,7 @@ article{
 
 }
 
-.produkttekst{
-  margin:auto;
-}
+
 
 .half{
   width: 45%;
@@ -190,25 +188,4 @@ article{
   margin: auto;
   padding: 20px 0px 10px 0px;
   max-width: 50%;
-}
-
-/* Button til produkt side */
-.button {
-  background-color: #000;
-  border-radius: 15px;
-  color: #fff;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-}
-.produktbutton{
-text-align: center;
-}
-
-
-.overskrifter {
-  font-size: 34px;
 }

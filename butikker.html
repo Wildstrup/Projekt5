@@ -3,8 +3,59 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="script" href="/js/search-test.js">
+    <script type="text/javascript" src="js/jquery.js"></script>
     <title>Club Matas</title>
+    <style media="screen">
+    /* Contains the entire tabbed section */
+.tabbed {
+}
+
+/* List of tabs */.tabbed ul.tabs {
+float: left;
+display: inline;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+.tabbed ul.tabs li {
+list-style: none;
+float: left;
+margin: 0;
+padding: 0;
+}
+.tabbed ul.tabs li a {
+overflow: hidden;
+display: block;
+margin: 0 2px 0 0;
+padding: 10px 12px;
+}
+.tabbed ul.tabs li a:hover {
+}
+
+/* The current selected tab */
+.tabbed ul.tabs li a.tab-current {
+}
+
+/* The content shown when a tab is selected */
+.tabbed div {
+float: left;
+display: block;
+width: 100%;
+}
+
+/* Set the CSS to make sure the other tabs' content isn't shown other than the first */
+.tabbed div.t2, .tabbed div.t3, .tabbed div.t4 {
+display: none;
+}
+
+/* Content for inside your tabs' divs */
+.tabbed div ul {
+}
+.tabbed div p {
+}
+.tabbed div div {
+}
+    </style>
   </head>
   <body>
   <header>
@@ -35,7 +86,7 @@
   </nav>
 
       <section id="logo">
-        <img src="image/logo.png" alt="club matas" hei>
+        <img src="image/logo.png" alt="club matas">
       </section>
       <section id="search">
         <img src="image/search.png" alt="search icon">
@@ -54,17 +105,122 @@
         <input autofocus placeholder="search" class="form-control" type="text" autocomplete="off" name="search" id="search" />
       </div>
 
-      <ul class="list-group" id="list"></ul>
+      </section>
+      <section class="full">
 
-      <script src="js/search.test.js">
 
-      </script>
+      <div class="tabbed">
+  	<!-- The tabs -->
+  	<ul class="tabs">
+  	<li class="t1"><a class="t1 tab" title="tab 1">København</a></li>
+  	<li class="t2"><a class="t2 tab" title="tab 2">Århus</a></li>
+  	<li class="t3"><a class="t3 tab" title="tab 3">Odense</a></li>
+  	<li class="t4"><a class="t4 tab" title="tab 4">Kolding</a></li>
+  	</ul>
+
+  	<!-- tab 1 -->
+  	<div class="t1 searchres">
+  	<!-- Put what you want in here.  For the sake of this tutorial, we'll make a list.  -->
+
+        <p><strong>Matas St. Kongensgade 47</strong></p>
+          <p><strong>Adresse</strong></p>
+            <p>
+            St. Kongensgade 47
+            1264, København K</p>
+
+            <p><strong>Matas Købmagergade 22</strong></p>
+              <p><strong>Adresse</strong></p>
+                <p>
+                  Købmagergade 22
+                  1150, København K
+                  </p>
+
+
+
+
+
+  	</div>
+
+  	<!-- tab 2 -->
+  	<div class="t2">
+  	<!-- Or, we could put a paragraph -->
+
+    <p><strong> Matas Bruuns Galleri</strong></p>
+      <p><strong>Adresse</strong></p>
+        <p>
+          M.P. Bruunsgade 25
+          8000, Århus C
+          </p>
+          <p><strong>Matas Store Torv</strong></p>
+            <p><strong>Adresse</strong></p>
+              <p>
+                Store Torv 15
+                8000, Århus C
+                </p>
+
+
+  	</div>
+
+  	<!-- tab 3 -->
+  	<div class="t3">
+  	<!-- Or, we could add a div -->
+    <p><strong>Matas Tarup Centret</strong></p>
+      <p><strong>Adresse</strong></p>
+        <p>
+        Tarup-Centret
+        5210, Odense NV</p>
+
+    <p><strong>Matas Skibhusvej</strong></p>
+      <p><strong>Adresse</strong></p>
+        <p>
+          Skibhusvej 87
+          5000, Odense C
+            </p>
+
+    </div>
+
+
+  	<!-- tab 4 -->
+  	<div class="t4">
+
+      <p><strong>Matas Helligkorsgade Kolding</strong></p>
+        <p><strong>Adresse</strong></p>
+          <p>
+            Helligkorsgade 14
+            6000, Kolding</p>
+      
+
+      <p><strong>  Matas Kolding Storcenter</strong></p>
+        <p><strong>Adresse</strong></p>
+          <p>
+            Kolding Storcenter, Skovvangen 42
+            6000, Kolding
+              </p>
+  	</div>
+
+  </div><!-- tabbed -->
+
     </section>
   </article>
 
 </main>
 
         <script>
+        $(document).ready(function() {
+            // setting the tabs in the sidebar hide and show, setting the current tab
+            	$('div.tabbed div').hide();
+            	$('div.t1').show();
+            	$('div.tabbed ul.tabs li.t1 a').addClass('tab-current');
+
+            // SIDEBAR TABS
+            $('div.tabbed ul li a').click(function(){
+            	var thisClass = this.className.slice(0,2);
+            	$('div.tabbed div').hide();
+            	$('div.' + thisClass).show();
+            	$('div.tabbed ul.tabs li a').removeClass('tab-current');
+            	$(this).addClass('tab-current');
+            	});
+            });
 
               /* When the user clicks on the button,
             toggle between hiding and showing the dropdown content */
