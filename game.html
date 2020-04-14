@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/game.css">
-    <script src="js/burgermenu.js">
-
-    </script>
+    <script src="js/burgermenu.js"></script>
+    <script src="js/game.js" async></script>
     <title>Club Matas</title>
   </head>
   <body>
@@ -43,12 +42,12 @@
         <img src="image/search.png" alt="search icon">
       </section>
   </header>
-
+<main>
 <section class="game">
 
 
   <h1 class="page-title">Matas Vendespil</h1>
-  <div class="overlay-text">
+  <div class="overlay-text ">
 Tryk for at starte
   </div>
   <div id="game-over-text" class="overlay-text">
@@ -56,96 +55,102 @@ Spillet er slut
 <span class="overlay-text-small">Tryk for at genstarte</span>
   </div>
 
-<div id="victory-text" class="overlay-text visible">
-Stort tillykke!
-<span class="overlay-text-small">Tryk for at genstarte</span>
+<div id="victory-text" class="overlay-text">
+Stort Tillykke!
+<span class="overlay-text-small"> Tryk for at genstarte</span>
   </div>
 
   <div class="game-container">
     <div class="game-info-container">
       <div class="game-info">
-        Time <span id="time-remaining"> 100 </span>
+        Time <span id="time-remaining">100</span>
       </div>
       <div class="game-info">
-        Flips <span id="flips"> 0 </span>
+        Flips <span id="flips">0</span>
       </div>
     </div>
-  <div class="card">
-    <div class="card-back card-face">
-<img class="striber" src="image/striber2.jpg" alt="Matas striber">
-    </div>
-    <div class="card-front card-face">
-    <img class="card-value"src="image/forside-1.png" alt="placeholder">
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-back card-face">
-  <img class="striber" src="image/striber2.jpg" alt="Matas striber">
-    </div>
-    <div class="card-front card-face">
-    <img class="card-value"src="image/forside-1.png" alt="placeholder">
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-back card-face">
-<img class="striber" src="image/striber2.jpg" alt="Matas striber">
-    </div>
-    <div class="card-front card-face">
-    <img class="card-value"src="image/forside-1.png" alt="placeholder">
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-back card-face">
-<img class="striber" src="image/striber2.jpg" alt="Matas striber">
-    </div>
-    <div class="card-front card-face">
-    <img class="card-value"src="image/forside-2.png" alt="placeholder">
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-back card-face">
-<img class="striber" src="image/striber2.jpg" alt="Matas striber">
-    </div>
-    <div class="card-front card-face">
-    <img class="card-value"src="image/forside-2.png" alt="placeholder">
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-back card-face">
-<img class="striber" src="image/striber2.jpg" alt="Matas striber">
-    </div>
-    <div class="card-front card-face">
-    <img class="card-value"src="image/forside-3.png" alt="placeholder">
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-back card-face">
-<img class="striber" src="image/striber2.jpg" alt="Matas striber">
-    </div>
-    <div class="card-front card-face">
-    <img class="card-value"src="image/forside-3.png" alt="placeholder">
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="striber" src="Image/Striber2.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Image/forside-1.png">
+      </div>
     </div>
 
-  </div>
-  <div class="card">
-    <div class="card-back card-face">
-<img class="striber" src="image/striber2.jpg" alt="Matas striber">
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="striber" src="Image/Striber2.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Image/forside-1.png">
+      </div>
     </div>
-    <div class="card-front card-face">
-    <img class="card-value"src="image/forside-4.png" alt="placeholder">
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="striber" src="Image/Striber2.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Image/forside-1.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="striber" src="Image/Striber2.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Image/forside-2.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="striber" src="Image/Striber2.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Image/forside-2.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="striber" src="Image/Striber2.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Image/forside-3.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="striber" src="Image/Striber2.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Image/forside-3.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="striber" src="Image/Striber2.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Image/forside-4.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="striber" src="Image/Striber2.jpg">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Image/forside-4.png">
+      </div>
+    </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card-back card-face">
-<img class="striber" src="image/striber2.jpg" alt="Matas striber">
-    </div>
-    <div class="card-front card-face">
-    <img class="card-value"src="image/forside-4.png" alt="placeholder">
-    </div>
-  </div>
-  </div>
+
 
 </section>
+</main>
 
 
 

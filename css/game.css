@@ -144,68 +144,68 @@ ul{
 }
 
 /*-- her begynder koden for kort spillet--*/
-
 @font-face {
-  font-family: "century", serif;
+  font-family: Century;
 }
 
-*{
+@font-face {
+  font-family: century;
+
+}
+
+* {
   box-sizing: border-box;
 }
 
-html{
+html {
   min-height: 100vh;
 }
 
-.game{
-  margin: 0;
-  background: #002346;
+main {
+
+  background: radial-gradient(#fafafa, #002346);
 }
 
-.page-title{
-  color: #fafafa;
+
+.page-title {
+  color: #f2faff;
   font-family: century, serif;
   font-weight: normal;
   text-align: center;
   font-size: 2em;
-}
-h2 {
-  color: green;
+  border-radius: 15px;
+
 }
 
-.game-info-container{
+.game-info-container {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
 }
 
-.game-info{
-  color: #fafafa;
-  font-size: 1em;
-  font-family: century;
+.game-info {
+  font-family: century, serif;
+  color: #f2faff;
+  font-size: 2em;
 }
 
-.game-container{
+.game-container {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   margin: 50px;
   justify-content: center;
   perspective: 500px;
 }
 
-.card{
+.card {
   position: relative;
-  height: 90px;
-  width: 80px;
+  height: 125px;
+  width: 95px;
 }
 
-.card-back{
-  background-color: black;
-  border-color: #002346;
-}
 
-.card-face{
+.card-face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -213,42 +213,46 @@ h2 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  backface-visibility:hidden;
+  backface-visibility: hidden;
   border-radius: 15px;
   border-width: 1px;
   border-style: solid;
+  transition: transform 500ms ease-in-out;
 }
 
-.card.visible .card-back{
+.card.visible .card-back {
   transform: rotateY(-180deg);
 }
 
-.card.visible .card-front{
-  transform: rotateY(0deg);
+.card.visible .card-front {
+  transform: rotateY(0)
 }
 
-.overlay-text{
+.card.matched .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.overlay-text {
+  display: none;
   position: fixed;
-  top:2;
-  left:2;
-  right:2;
-  bottom:2;
-  display: flex;
+  top: 350px;
+  left: 0;
+  right: 0;
+  bottom: 1;
   justify-content: center;
   align-items: center;
   z-index: 100;
-  color: #fafafa;
+  color: #f2faff;
   font-family: century, serif;
-margin-left: 55px;
-margin-top: 200px;
+
+
 }
 
-
-.overlay-text-small{
-  font-size: .3em;
+.overlay-text-small {
+  font-size: .5em;
 }
 
-.overlay-text.visible{
+.overlay-text.visible {
   display: flex;
   flex-direction: column;
   animation: overlay-grow 500ms forwards;
@@ -262,19 +266,42 @@ margin-top: 200px;
   to {
     background-color: rgba(0, 0, 0, .8);
     font-size: 2em;
-
   }
 }
 
-.card-front{
-  background-color: #f2faff;
-  border-color:#333;
-  transform: rotateX(180deg);
+
+.card-back {
+  background-color: black;
+  border-color: #FF6D00;
 }
 
+.card-front {
+  background-color: #FFBB89;
+  border-color: #333;
+  transform: rotateY(180deg);
+}
+
+
+@media (min-width: 500px) {
+  .game-container {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  @media (max-width: 500px) {
+    .game-container {
+      grid-template-columns: repeat(3, auto);
+    }
+
+
+
+  .game-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .striber{
   position: absolute;
   width: 100px;
-  height: 100px;
+  height: 150px;
 }
