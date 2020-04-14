@@ -118,6 +118,9 @@ ul{
   width: 60%;
   background-color: #F2FAFF;
 }
+.show {
+  display: block;
+}
 
 .menu{
     display: block;
@@ -140,9 +143,7 @@ ul{
     margin-left: 10px;
 }
 
-.show {
-  display: block;
-}
+
 
 
 
