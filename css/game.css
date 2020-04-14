@@ -188,6 +188,7 @@ html{
   grid-gap: 10px;
   margin: 50px;
   justify-content: center;
+  perspective: 500px;
 }
 
 .card{
@@ -213,19 +214,23 @@ html{
   border-radius: 15px;
   border-width: 1px;
   border-style: solid;
+  transition: transform:500ms ease-in-out;
 }
 
-.card.visible .card-back{
+.card:hover .card-back{
   transform: rotateY(-180deg);
 }
 
-card.visible .card-front{
-  transform: rotateY(0);
+.card:hover .card-front{
+  transform: rotateY(0deg);
 }
 
 .card-front{
+  background-color: #f2faff;
+  border-color:#333;
   transform: rotateX(180deg);
 }
+
 
 .striber{
   position: absolute;
