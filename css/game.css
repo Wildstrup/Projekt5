@@ -146,17 +146,18 @@ ul{
 /*-- her begynder koden for kort spillet--*/
 
 @font-face {
-  font-family: century;
+  font-family: "century", serif;
 }
 
-* {
+*{
   box-sizing: border-box;
 }
 
 html{
   min-height: 100vh;
 }
-main{
+
+.game{
   margin: 0;
   background: #002346;
 }
@@ -164,7 +165,7 @@ main{
 .page-title{
   color: #fafafa;
   font-family: century, serif;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
   font-size: 2em;
 }
@@ -172,31 +173,32 @@ main{
 .game-info-container{
   grid-column: 1 / -1;
   display: flex;
-  justify-content: space-between;;
+  justify-content: space-between;
 }
 
 .game-info{
   color: #fafafa;
   font-size: 1em;
-  font-family: century, serif;
-  text-align: center;
-
+  font-family: century;
 }
 
 .game-container{
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
-  margin: 20px;
+  margin: 50px;
   justify-content: center;
-  perspective: 500px;
 }
 
 .card{
   position: relative;
-  height: 100px;
-  width: 75px;
-  overflow: hidden;
+  height: 90px;
+  width: 80px;
+}
+
+.card-back{
+  background-color: black;
+  border-color: #002346;
 }
 
 .card-face{
@@ -207,32 +209,24 @@ main{
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  backface-visibility:hidden;
   border-radius: 15px;
   border-width: 1px;
   border-style: solid;
-  backface-visibility: hidden;
 }
 
-.card:hover .card-back {
-  transform: rotateY()(-180deg);
+.card.visible .card-back{
+  transform: rotateY(-180deg);
 }
 
-.card:hover .card-front{
-  transform: rotateY()(0);
+card.visible .card-front{
+  transform: rotateY(0);
 }
-.
+
 .card-front{
   transform: rotateX(180deg);
-  background-color: #ffbb89;
-  border-color: #333;
-
 }
 
-
-.card-back{
-  background-color: #fafafa;
-  border-color: #fafafa;
-}
 .striber{
   position: absolute;
   width: 100px;
