@@ -153,7 +153,7 @@ article{
   display: flex;
   flex-wrap: wrap;
   background-color: #012945;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 10px 10px 10px;
 
 }
 .full{
@@ -185,7 +185,13 @@ article{
 .half h1, .half img {
   margin: auto;
   padding: 20px 0px 10px 0px;
-  max-width: 50%;
+  max-width: 80%;
+}
+h2{
+  font-size:18px;
+}
+h3{
+  font-size: 14px;
 }
 
 /* Kontakt side*/
