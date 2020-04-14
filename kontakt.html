@@ -88,55 +88,37 @@
       </article>
       <article>
         <section class="full">
-        <div class="col2">
-          <p>Navn</p>
-        </div>
-        <div class="col2">
-              <p>Telefon</p>
-        </div>
 
-            <div class="col2">
-              <input type="text" name="navn" required>
-            </div>
-                <div class="col2">
-                  <input type="text" name="telefon" value="">
-                </div>
-            <div class="col2">
-                  <p>email</p>
-            </div>
-            <div class="col2">
-                  <p>emne</p>
-            </div>
-            <div class="col2">
-               <input type="text" name="email" value="">
-            </div>
-            <div class="col2">
-              <input type="text" name="emne" value="">
-            </div>
-            <div class="col1">
-                  <p>Besked</p>
-            </div>
-            <div class="col1">
-              <textarea name="name" rows="8" cols="12"></textarea>
-            </div>
-            <div class="col1">
-                <input type="submit" name="send" value="Sende">
-            </div>
 
-            <div class="col2">
-            <form id="my_form" onsubmit="submitForm(); return false;">
-            </div>
               <div class="col2">
-                <p><input id="n" placeholder="Navn" required></p>
+                <p>Navn</p>
               </div>
               <div class="col2">
-                <p><input id="t" placeholder="Telefon" required></p>
+                    <p>Telefon</p>
+              </div>
+
+              <div class="col2">
+                  <form id="my_form" onsubmit="submitForm(); return false;">
+                <p><input id="n" placeholder="" required></p>
               </div>
               <div class="col2">
-                <p><input id="e" placeholder="Email" type="email" required></p>
+                <p><input id="t" placeholder="" required></p>
               </div>
               <div class="col2">
-                <p><input id="m" placeholder="Emne" required></p>
+                        <p>email</p>
+                  </div>
+                  <div class="col2">
+                        <p>emne</p>
+                  </div>
+
+              <div class="col2">
+                <p><input id="e" placeholder="" type="email" required></p>
+              </div>
+              <div class="col2">
+                <p><input id="m" placeholder="" required></p>
+              </div>
+              <div class="col1">
+                    <p>Besked</p>
               </div>
               <div class="col1">
                 <textarea id="b" placeholder="Skriv din besked her" rows="8" cols="12" required></textarea>
@@ -144,7 +126,7 @@
               <div class="col1">
                 <p><input id="mybtn" type="submit" value="Send"> <span id="status"></span></p>
               </div>
-
+            </form>
           </section>
 
       </article>
