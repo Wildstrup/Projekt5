@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>En kontaktform der kan udfyldes</title>
+    <script src="js/kontaktform.js" defer></script>
+  </head>
+  <body>
+    <form id="my_form" onsubmit="submitForm(); return false;">
+      <p><input id="n" placeholder="Navn" required></p>
+      <p><input id="e" placeholder="Email" type="email" required></p>
+      <textarea id="b" placeholder="Skriv din besked her" rows="10" required></textarea>
+      <p><input id="mybtn" type="submit" value="Send"> <span id="status"></span></p>
+  </body>
+</html>
