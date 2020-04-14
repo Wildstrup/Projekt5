@@ -222,8 +222,11 @@ h3{
   }
 
   .kasse input{
-    width: 100px;
+    width: 80%;
     border-radius: 5px;
+  }
+  .space{
+    margin: 50px 0px;
   }
 
 /*Betaling*/
