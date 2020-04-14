@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/burgermenu.js" charset="utf-8"></script>
+    <script src="js/kontaktform.js" defer></script>
     <title>Club Matas</title>
   </head>
   <body>
@@ -94,7 +96,7 @@
         </div>
 
             <div class="col2">
-              <input type="text" name="navn" value="">
+              <input type="text" name="navn" required>
             </div>
                 <div class="col2">
                   <input type="text" name="telefon" value="">
@@ -121,43 +123,32 @@
                 <input type="submit" name="send" value="Sende">
             </div>
 
+            <div class="col2">
+            <form id="my_form" onsubmit="submitForm(); return false;">
+            </div>
+              <div class="col2">
+                <p><input id="n" placeholder="Navn" required></p>
+              </div>
+              <div class="col2">
+                <p><input id="t" placeholder="Telefon" required></p>
+              </div>
+              <div class="col2">
+                <p><input id="e" placeholder="Email" type="email" required></p>
+              </div>
+              <div class="col2">
+                <p><input id="m" placeholder="Emne" required></p>
+              </div>
+              <div class="col1">
+                <textarea id="b" placeholder="Skriv din besked her" rows="8" cols="12" required></textarea>
+              </div>
+              <div class="col1">
+                <p><input id="mybtn" type="submit" value="Send"> <span id="status"></span></p>
+              </div>
 
           </section>
 
       </article>
 
-
     </main>
-
-
-
-
-        <script>
-
-              /* When the user clicks on the button,
-            toggle between hiding and showing the dropdown content */
-
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-        // Close the dropdown if the user clicks outside of it
-
-            window.onclick = function(event) {
-              if (!event.target.matches('.menu-line')) {
-                var dropdowns = document.getElementsByClassName("menu-left-part");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-                }
-              }
-            }
-
-        </script>
-
-
   </body>
 </html>
