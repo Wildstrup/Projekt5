@@ -7,7 +7,9 @@ function submitForm(){
 	_("status").innerHTML = 'Vent venligst ...';
 	var formdata = new FormData();
 	formdata.append( "n", _("n").value );
+  formdata.append( "t", _("t").value );
 	formdata.append( "e", _("e").value );
+  formdata.append( "m", _("m").value );
 	formdata.append( "b", _("b").value );
 	var ajax = new XMLHttpRequest();
 	ajax.open( "POST", "../php/kontaktformtest.php" );
