@@ -278,6 +278,18 @@ text-align: center;
 .produkttekst{
   margin:auto;
 }
+.bagkat{
+  background-color: red;
+  border-radius: 15px;
+  color: #fff;
+  padding: 7px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  width: 100%;
+}
 
 /*-- her begynder koden for kort spillet--*/
 
