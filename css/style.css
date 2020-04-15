@@ -554,9 +554,14 @@ main{
 
 }
 .profil img{
-  width: 50%;
+  width: 60%;
 }
 .profil a{
   margin: auto;
 
+}
+.profil input{
+  width: 40%;
+  margin: 10px;
+  padding: 5px;
 }
