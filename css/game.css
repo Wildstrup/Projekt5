@@ -236,8 +236,8 @@ main {
   display: none;
   position: fixed;
   top: 350px;
-  left: 0;
-  right: 0;
+  left: 350px;;
+  right: 1;
   bottom: 1;
   justify-content: center;
   align-items: center;
