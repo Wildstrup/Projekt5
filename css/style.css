@@ -195,7 +195,7 @@ main{
   background-color: #fff;
   border-radius: 15px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -544,14 +544,19 @@ main{
   background-color: #f2faff;
   border: 2px solid #010101;
 }
-/* Farver
-Main
-#002643 Blå
-#575757 Grå
-#3DA688 Grøn
-#fafafa Hvid
 
-Secondary
-#010101 Sort
-#f2faff sølv
-*/
+/* Profil side*/
+
+
+.profil p{
+  width: 100%;
+  font-size: 20px;
+
+}
+.profil img{
+  width: 50%;
+}
+.profil a{
+  margin: auto;
+
+}
