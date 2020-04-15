@@ -45,15 +45,17 @@ p {
 
 /*header area*/
 
-header{
-
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  height: 50px;
-  padding: 10px 30px 10px 30px;
-
+header {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 52px;
+    padding: 10px 30px 10px 30px;
+    position: fixed;
+    background-color: white;
+    margin-bottom: 10px;
 }
+
 #logo{
   margin: auto;
 
@@ -172,9 +174,6 @@ ul{
 }
 
 
-
-
-
 /*main area */
 a{
   text-decoration: none;
@@ -185,7 +184,7 @@ main{
   display: flex;
   flex-wrap: wrap;
   background-color: #012945;
-  padding: 10px 10px 10px 10px;
+  padding: 50px 10px 10px 10px
 
 }
 .full{
