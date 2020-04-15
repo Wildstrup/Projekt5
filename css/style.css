@@ -229,13 +229,19 @@ h3{
 /*Forside*/
 .forside{
   display: flex;
-  flex-direction: row;
+
 }
 .forside a{
   width: 100%;
 }
 .img-h img, .img-h p{
   width: 50%;
+}
+.forside p{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0px;
 }
 
 /* Kontakt side*/
