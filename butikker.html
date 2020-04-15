@@ -3,59 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/burgermenu.js" defer></script>
     <title>Club Matas</title>
-    <style media="screen">
-    /* Contains the entire tabbed section */
-.tabbed {
-}
-
-/* List of tabs */.tabbed ul.tabs {
-float: left;
-display: inline;
-width: 100%;
-margin: 0;
-padding: 0;
-}
-.tabbed ul.tabs li {
-list-style: none;
-float: left;
-margin: 0;
-padding: 0;
-}
-.tabbed ul.tabs li a {
-overflow: hidden;
-display: block;
-margin: 0 2px 0 0;
-padding: 10px 12px;
-}
-.tabbed ul.tabs li a:hover {
-}
-
-/* The current selected tab */
-.tabbed ul.tabs li a.tab-current {
-}
-
-/* The content shown when a tab is selected */
-.tabbed div {
-float: left;
-display: block;
-width: 100%;
-}
-
-/* Set the CSS to make sure the other tabs' content isn't shown other than the first */
-.tabbed div.t2, .tabbed div.t3, .tabbed div.t4 {
-display: none;
-}
-
-/* Content for inside your tabs' divs */
-.tabbed div ul {
-}
-.tabbed div p {
-}
-.tabbed div div {
-}
-    </style>
   </head>
   <body>
   <header>
@@ -79,22 +28,19 @@ display: none;
           <li class="menu-item"><img src="image/profil-icon.png" alt=""><a href="profil.html">Min profil</a></li>
           <li class="menu-item"><img src="image/kontakt-icon.png" alt=""><a href="kontakt.html">Kontakt</a></li>
 
-
-
       </ul>
-
   </nav>
 
-      <section id="logo">
+      <div id="logo">
         <img src="image/logo.png" alt="club matas">
-      </section>
-      <section id="search">
+      </div>
+      <div id="search">
         <img src="image/search.png" alt="search icon">
-      </section>
+      </div>
   </header>
 
 <main>
-  <article>
+
     <section class="full">
       <div class="input.group">
         <div class="input-group-prepend">
@@ -134,10 +80,6 @@ display: none;
                   Købmagergade 22
                   1150, København K
                   </p>
-
-
-
-
 
   	</div>
 
@@ -188,7 +130,7 @@ display: none;
           <p>
             Helligkorsgade 14
             6000, Kolding</p>
-      
+
 
       <p><strong>  Matas Kolding Storcenter</strong></p>
         <p><strong>Adresse</strong></p>
@@ -201,7 +143,7 @@ display: none;
   </div><!-- tabbed -->
 
     </section>
-  </article>
+
 
 </main>
 
@@ -221,28 +163,6 @@ display: none;
             	$(this).addClass('tab-current');
             	});
             });
-
-              /* When the user clicks on the button,
-            toggle between hiding and showing the dropdown content */
-
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-        // Close the dropdown if the user clicks outside of it
-
-            window.onclick = function(event) {
-              if (!event.target.matches('.menu-line')) {
-                var dropdowns = document.getElementsByClassName("menu-left-part");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-                }
-              }
-            }
 
         </script>
 

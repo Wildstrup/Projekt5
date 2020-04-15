@@ -1,9 +1,46 @@
-
 body {
 
   max-width: 320px;
   margin: auto;
 
+}
+
+h1 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+h2 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 20.4px;
+}
+
+h3 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+p {
+  font-family: "New Century Schoolbook", Times, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 /*header area*/
@@ -143,7 +180,7 @@ a{
   text-decoration: none;
 }
 
-article{
+main{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -158,13 +195,14 @@ article{
   background-color: #fff;
   border-radius: 15px;
   padding: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .full h1, .full img, .full h2, .full h3 {
   margin: auto;
   width: 100%;
-  padding-bottom: 10px;
+  padding-top: 10px;
 
 }
 
@@ -175,6 +213,7 @@ article{
   border-radius: 15px;
   margin: auto;
   text-align: center;
+  margin-top: 10px;
 
 }
 .half h1, .half img {
@@ -285,6 +324,56 @@ text-align: center;
   margin: 4px 2px;
   width: 100%;
 }
+/* Contains the entire tabbed section */
+.tabbed {
+}
+
+/* List of tabs */.tabbed ul.tabs {
+float: left;
+display: inline;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+.tabbed ul.tabs li {
+list-style: none;
+float: left;
+margin: 0;
+padding: 0;
+}
+.tabbed ul.tabs li a {
+overflow: hidden;
+display: block;
+margin: 0 2px 0 0;
+padding: 10px 12px;
+}
+.tabbed ul.tabs li a:hover {
+}
+
+/* The current selected tab */
+.tabbed ul.tabs li a.tab-current {
+}
+
+/* The content shown when a tab is selected */
+.tabbed div {
+float: left;
+display: block;
+width: 100%;
+}
+
+/* Set the CSS to make sure the other tabs' content isn't shown other than the first */
+.tabbed div.t2, .tabbed div.t3, .tabbed div.t4 {
+display: none;
+}
+
+/* Content for inside your tabs' divs */
+.tabbed div ul {
+}
+.tabbed div p {
+}
+.tabbed div div {
+}
+
 
 /*-- her begynder koden for kort spillet--*/
 
@@ -381,3 +470,88 @@ main{
   width: 100px;
   height: 100px;
 }
+
+.style {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.style h2 {
+  width: 40%;
+}
+
+.style img {
+  width: 50%;
+  padding: 0 10px;
+}
+
+#styleguide {
+  width: 100%;
+}
+
+.btn {
+  background-color: #f2faff;
+  border: 1px solid #010101;
+  border-radius: 15px;
+  color: #010101;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.styleikon img {
+  width: 25%;
+  padding: 0 10px;
+}
+
+.palette div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 10px 4px;
+}
+
+.blue {
+  background-color: #002643;
+  border: 2px solid #010101;
+}
+
+.grey {
+  background-color: #575757;
+  border: 2px solid #010101;
+}
+
+.green {
+  background-color: #3DA688;
+  border: 2px solid #010101;
+}
+
+.white {
+  background-color: #fafafa;
+  border: 2px solid #010101;
+}
+
+.black {
+  background-color: #010101;
+  border: 2px solid #010101;
+}
+
+.silver {
+  background-color: #f2faff;
+  border: 2px solid #010101;
+}
+/* Farver
+Main
+#002643 Blå
+#575757 Grå
+#3DA688 Grøn
+#fafafa Hvid
+
+Secondary
+#010101 Sort
+#f2faff sølv
+*/

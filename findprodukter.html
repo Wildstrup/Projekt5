@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/burgermenu.js" defer></script>
     <title>Club Matas</title>
   </head>
   <body>
@@ -27,23 +28,20 @@
           <li class="menu-item"><img src="image/profil-icon.png" alt=""><a href="profil.html">Min profil</a></li>
           <li class="menu-item"><img src="image/kontakt-icon.png" alt=""><a href="kontakt.html">Kontakt</a></li>
 
-
-
       </ul>
-
   </nav>
 
-      <section id="logo">
-        <img src="image/logo.png" alt="club matas" hei>
-      </section>
-      <section id="search">
+      <div id="logo">
+        <img src="image/logo.png" alt="club matas">
+      </div>
+      <div id="search">
         <img src="image/search.png" alt="search icon">
-      </section>
+      </div>
   </header>
 
   <main>
 
-      <article>
+
         <section class="half">
           <h2>Nyheder</h2>
           <img class="halfimage" src="image/gave/gave4.png" alt="Matas ELIZABETH ARDEN">
@@ -60,9 +58,7 @@
             <a href="gave.html" class="button">Se mere</a>
           </div>
         </section>
-      </article>
 
-      <article>
         <section class="half">
           <h2>Dufte</h2>
           <img class="halfimage" src="image/duft/poloralph.png" alt="Matas Ralph Lauren Parfume">
@@ -79,9 +75,7 @@
             <a href="barbering.html" class="button">Se mere</a>
           </div>
         </section>
-      </article>
 
-      <article>
         <section class="half">
           <h2>Hår</h2>
           <img class="halfimage" src="image/hår/idvoks.png" alt="Matas ID voks">
@@ -98,33 +92,6 @@
             <a href="krop.html" class="button">Se mere</a>
           </div>
         </section>
-      </article>
-
-        <script>
-
-              /* When the user clicks on the button,
-            toggle between hiding and showing the dropdown content */
-
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-        // Close the dropdown if the user clicks outside of it
-
-            window.onclick = function(event) {
-              if (!event.target.matches('.menu-line')) {
-                var dropdowns = document.getElementsByClassName("menu-left-part");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-                }
-              }
-            }
-
-        </script>
 
 
   </body>
