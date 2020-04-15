@@ -53,8 +53,8 @@ class MixorMatch{
           this.cardToCheck = null;
       }
       cardMatch(card1, card2) {
-    this.matchedCards.push(card1);
-    this.matchedCards.push(card2);
+        this.matchedCards.push(card1);
+            this.matchedCards.push(card2);
     card1.classList.add('matched');
     card2.classList.add('matched');
     this.audioController.match();
@@ -114,7 +114,7 @@ canFlipCard(card) {
 function ready() {
   let overlays = Array.from(document.getElementsByClassName('overlay-text'));
   let cards = Array.from(document.getElementsByClassName('card'));
-  let game = new MixorMatch(20, cards);
+  let game = new MixorMatch(10, cards);
 
 
 
