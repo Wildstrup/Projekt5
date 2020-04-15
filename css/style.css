@@ -437,12 +437,76 @@ main{
 .style {
   display: flex;
   flex-direction: row;
+
 }
 
 .style h2 {
   width: 40%;
 }
 
+.style img {
+  width: 50%;
+  padding: 0 10px;
+}
+
+#styleguide {
+  width: 100%;
+}
+
+.btn {
+  background-color: #f2faff;
+  border: 1px solid #010101;
+  border-radius: 15px;
+  color: #010101;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.styleikon img {
+  width: 25%;
+  padding: 0 10px;
+}
+
+.palette div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 10px 4px;
+}
+
+.blue {
+  background-color: #002643;
+  border: 2px solid #010101;
+}
+
+.grey {
+  background-color: #575757;
+  border: 2px solid #010101;
+}
+
+.green {
+  background-color: #3DA688;
+  border: 2px solid #010101;
+}
+
+.white {
+  background-color: #fafafa;
+  border: 2px solid #010101;
+}
+
+.black {
+  background-color: #010101;
+  border: 2px solid #010101;
+}
+
+.silver {
+  background-color: #f2faff;
+  border: 2px solid #010101;
+}
 /* Farver
 Main
 #002643 Blå
@@ -452,5 +516,5 @@ Main
 
 Secondary
 #010101 Sort
-#f2faff
+#f2faff sølv
 */
