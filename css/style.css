@@ -320,7 +320,6 @@ margin-bottom: 10px;}
 text-align: center;
 }
 
-
 .overskrifter {
   font-size: 34px;
 }
@@ -407,6 +406,10 @@ html{
 main{
   margin: 0;
   background: #002346;
+}
+
+.loginmain {
+  background: white;
 }
 
 .page-title{
