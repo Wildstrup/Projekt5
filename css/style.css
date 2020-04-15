@@ -433,3 +433,23 @@ main{
   width: 100px;
   height: 100px;
 }
+
+.style {
+  display: flex;
+  flex-direction: row;
+}
+
+.style h2 {
+  width: 40%;
+}
+
+/* Farver
+Main
+#002643 Blå
+#575757 Grå
+#3DA688 Grøn
+#fafafa Hvid
+
+Secondary
+#010101 Sort
+#f2faff
