@@ -55,10 +55,6 @@ header{
     background: #5B5B5B;
     left: 1px;
     position: absolute;
-    -webkit-transition: opacity 0.25s;
-    -moz-transition: opacity 0.25s;
-    -ms-transition: opacity 0.25s;
-    -o-transition: opacity 0.25s;
     transition: opacity 0.25s;
     top: 20px;
 }
@@ -71,10 +67,8 @@ header{
     background: #5B5B5B;
     left: 1px;
     position: absolute;
-    -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    -webkit-transition: -webkit-transform 0.25s;
-    transition: transform 0.25s;
+      transition: transform 0.25s;
     top: 20px;
 }
 
@@ -86,19 +80,16 @@ header{
 
 #toggle.on:before
 {
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+      transform: rotate3d(0, 0, 1, 45deg);
 }
 
 #toggle.on:after
 {
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
 }
 
 #toggle:after
 {
-    -webkit-transform: translate3d(0, 8px, 0);
     transform: translate3d(0, 8px, 0);
 }
 
