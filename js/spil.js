@@ -12,6 +12,7 @@ class MixorMatch{
     this.cardToCheck = null;
     this.totalClicks = 0;
     this.timeRemaining = this.totalTime;
+    this.matchedCards = [];
     this.busy = true;
 
     setTimeout(() => {
@@ -54,10 +55,9 @@ class MixorMatch{
       }
       cardMatch(card1, card2) {
         this.matchedCards.push(card1);
-            this.matchedCards.push(card2);
+        this.matchedCards.push(card2);
     card1.classList.add('matched');
     card2.classList.add('matched');
-    this.audioController.match();
     if(this.matchedCards.length === this.cardsArray.length)
         this.victory();
       }
@@ -92,6 +92,7 @@ gameOver() {
 victory(){
   clearInterval(this.countDown);
   document.getElementById('victory-text').classList.add('visible');
+  this.hideCards();
 
 }
 
@@ -104,8 +105,7 @@ shuffleCards() {
 }
 
 canFlipCard(card) {
-  return true;
-     //return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+    return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
  }
 }
 
@@ -114,7 +114,7 @@ canFlipCard(card) {
 function ready() {
   let overlays = Array.from(document.getElementsByClassName('overlay-text'));
   let cards = Array.from(document.getElementsByClassName('card'));
-  let game = new MixorMatch(10, cards);
+  let game = new MixorMatch(50, cards);
 
 
 

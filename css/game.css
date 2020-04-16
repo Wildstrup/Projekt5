@@ -284,12 +284,12 @@ main {
 
 @media (min-width: 500px) {
   .game-container {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
   }
 
   @media (max-width: 500px) {
     .game-container {
-      grid-template-columns: repeat(3, auto);
+      grid-template-columns: repeat(2, auto);
     }
 
 
