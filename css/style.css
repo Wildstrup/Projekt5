@@ -315,7 +315,7 @@ margin-bottom: 10px;}
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: auto;
 }
 .produktbutton{
 text-align: center;
@@ -407,6 +407,7 @@ html{
 main{
   margin: 0;
   background: #002346;
+  padding-bottom: 20px; 
 }
 
 .loginmain {
