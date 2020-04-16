@@ -246,6 +246,7 @@ main {
   font-family: century, serif;
 
 
+
 }
 
 .overlay-text-small {
@@ -256,6 +257,7 @@ main {
   display: flex;
   flex-direction: column;
   animation: overlay-grow 500ms forwards;
+  position: inherit;
 }
 
 @keyframes overlay-grow {
