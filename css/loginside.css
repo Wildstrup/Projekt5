@@ -73,6 +73,12 @@
   background-color: #456d89;
 }
 
+h1 {
+  display: block;
+  text-align: center;
+  padding-top: 60px;
+}
+
 h2 {
   display: block;
   text-align: center;

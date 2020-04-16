@@ -32,7 +32,7 @@
   </nav>
 
       <div id="logo">
-        <img src="image/logo.png" alt="club matas">
+        <a href="index.html" ><img src="image/logo.png" alt="club matas"></a>
       </div>
       <div id="search">
         <img src="image/search.png" alt="search icon">
@@ -42,27 +42,19 @@
 <main>
 
     <section class="full">
-      <div class="input.group">
-        <div class="input-group-prepend">
-            <span class="fa fa-search">
-              <span class="fa fa-search"></span>
-            </span>
-        </div>
-        <input autofocus placeholder="search" class="form-control" type="text" autocomplete="off" name="search" id="search" />
-      </div>
-
+      <h1>Find butik</h1>
       </section>
       <section class="full">
 
 
       <div class="tabbed">
-  	<!-- The tabs -->
-  	<ul class="tabs">
-  	<li class="t1"><a class="t1 tab" title="tab 1">København</a></li>
-  	<li class="t2"><a class="t2 tab" title="tab 2">Århus</a></li>
-  	<li class="t3"><a class="t3 tab" title="tab 3">Odense</a></li>
-  	<li class="t4"><a class="t4 tab" title="tab 4">Kolding</a></li>
-  	</ul>
+        	<!-- The tabs -->
+        	<ul class="tabs">
+        	<li class="t1"><a class="t1 tab" title="tab 1">København</a></li>
+        	<li class="t2"><a class="t2 tab" title="tab 2">Århus</a></li>
+        	<li class="t3"><a class="t3 tab" title="tab 3">Odense</a></li>
+        	<li class="t4"><a class="t4 tab" title="tab 4">Kolding</a></li>
+        	</ul>
 
   	<!-- tab 1 -->
   	<div class="t1 searchres">
@@ -146,26 +138,6 @@
 
 
 </main>
-
-        <script>
-        $(document).ready(function() {
-            // setting the tabs in the sidebar hide and show, setting the current tab
-            	$('div.tabbed div').hide();
-            	$('div.t1').show();
-            	$('div.tabbed ul.tabs li.t1 a').addClass('tab-current');
-
-            // SIDEBAR TABS
-            $('div.tabbed ul li a').click(function(){
-            	var thisClass = this.className.slice(0,2);
-            	$('div.tabbed div').hide();
-            	$('div.' + thisClass).show();
-            	$('div.tabbed ul.tabs li a').removeClass('tab-current');
-            	$(this).addClass('tab-current');
-            	});
-            });
-
-        </script>
-
 
   </body>
 </html>

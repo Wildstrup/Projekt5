@@ -45,15 +45,17 @@ p {
 
 /*header area*/
 
-header{
-
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  height: 50px;
-  padding: 10px 30px 10px 30px;
-
+header {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 52px;
+    padding: 10px 30px 10px 30px;
+    position: fixed;
+    background-color: white;
+    margin-bottom: 10px;
 }
+
 #logo{
   margin: auto;
 
@@ -172,9 +174,6 @@ ul{
 }
 
 
-
-
-
 /*main area */
 a{
   text-decoration: none;
@@ -185,7 +184,7 @@ main{
   display: flex;
   flex-wrap: wrap;
   background-color: #012945;
-  padding: 10px 10px 10px 10px;
+  padding: 50px 10px 10px 10px
 
 }
 .full{
@@ -226,6 +225,23 @@ h2{
 }
 h3{
   font-size: 14px;
+}
+/*Forside*/
+.forside{
+  display: flex;
+
+}
+.forside a{
+  width: 100%;
+}
+.img-h img, .img-h p{
+  width: 50%;
+}
+.forside p{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0px;
 }
 
 /* Kontakt side*/
@@ -303,7 +319,6 @@ margin-bottom: 10px;}
 .produktbutton{
 text-align: center;
 }
-
 
 .overskrifter {
   font-size: 34px;
@@ -391,6 +406,10 @@ html{
 main{
   margin: 0;
   background: #002346;
+}
+
+.loginmain {
+  background: white;
 }
 
 .page-title{
@@ -554,9 +573,14 @@ main{
 
 }
 .profil img{
-  width: 50%;
+  width: 60%;
 }
 .profil a{
   margin: auto;
 
+}
+.profil input{
+  width: 40%;
+  margin: 10px;
+  padding: 5px;
 }
